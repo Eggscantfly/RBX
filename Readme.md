@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://upload.wikimedia.org/wikipedia/en/7/76/Robox_coverart.png" alt="Robox Cover Art" width="300"/>
+<img src="https://upload.wikimedia.org/wikipedia/en/7/76/Robox_coverart.png" alt="Robox Cover Art" width="220"/>
 
 # **RBX – Robox Decompilation**
 
