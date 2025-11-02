@@ -19,7 +19,7 @@ Everything here is for **preservation, documentation, and modding research** —
 <div align="center">
 
 [![License](https://img.shields.io/badge/license-Educational-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-WIP-orange.svg)](README.md)
+[![Status](https://img.shields.io/badge/status-0.1%-orange.svg)](README.md)
 [![Platform](https://img.shields.io/badge/platform-WiiWare-lightgrey.svg)](https://en.wikipedia.org/wiki/WiiWare)
 
 </div>
