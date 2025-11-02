@@ -11,7 +11,7 @@ A reverse engineering and decompilation project for **Robox**
 
 ---
 
-This project aims to fully decompile the original Robox executable into readable and rebuildable C/C++ source code.  
+This project aims to fully decompile the original Robox executable into readable and rebuildable C source code.  
 Everything here is for **preservation, documentation, and modding research** — no copyrighted assets or binaries are included.
 
 ---
