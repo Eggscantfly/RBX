@@ -22,14 +22,14 @@ shortboss:
     return;
 
 check_6d:
-    if (Level_id != 0x6d) goto check_a7;
-    if (FUN_800e4154(FUN_800e46dc(), 0xa0, 1) != 0) goto check_a7;
+    if (Level_id != 0x6d) goto finalboss;
+    if (FUN_800e4154(FUN_800e46dc(), 0xa0, 1) != 0) goto finalboss;
     FUN_80057c54();
     return;
 
 finalboss:
 //jefeepic1.zbg
-    if (Level_id != 0xa7) goto check_world1;
+    if (Level_id != 0xa7) goto regular;
     if (Music_id == 6) return;
     Music_id = 6;
     FUN_80057c54();
