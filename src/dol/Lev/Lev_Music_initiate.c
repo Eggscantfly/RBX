@@ -1,4 +1,4 @@
-//Oringinally named (FUN_80062bd4)
+// Originally named (FUN_80062bd4)
 void lev_Music_initiate(int Level_id)
 {
     extern int Music_id;
