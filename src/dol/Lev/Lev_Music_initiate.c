@@ -6,13 +6,14 @@ void lev_Music_initiate(int Level_id)
     extern int Music_id;
     extern char MusicStrings[];
     
-    if (Level_id == 0x68) goto tension;
-    if (Level_id == 0x7b) goto tension;
-    if ((unsigned int)(Level_id - 0x96) <= 1) goto tension;
+    if (Level_id == 0x68) goto shortboss;
+    if (Level_id == 0x7b) goto shortboss;
+    if ((unsigned int)(Level_id - 0x96) <= 1) goto shortboss;
     
     goto check_6d;
 
-tension:
+shortboss:
+//tension.dum
     if (Music_id == 7) return;
     Music_id = 7;
     FUN_80057c54();
@@ -26,7 +27,8 @@ check_6d:
     FUN_80057c54();
     return;
 
-check_a7:
+finalboss:
+//jefeepic1.zbg
     if (Level_id != 0xa7) goto check_world1;
     if (Music_id == 6) return;
     Music_id = 6;
@@ -35,7 +37,8 @@ check_a7:
     FUN_80057bf0(1);
     return;
 
-check_world1:
+regular:
+//bosque.dan
     if ((unsigned int)(Level_id - 0x64) <= 0x13) {
         if (Music_id != 1) {
             Music_id = 1;
@@ -44,6 +47,7 @@ check_world1:
             FUN_80057bf0(1);
         }
     }
+    //cueva.san
     if ((unsigned int)(Level_id - 0x78) <= 0x13) {
         if (Music_id != 2) {
             Music_id = 2;
@@ -52,6 +56,7 @@ check_world1:
             FUN_80057bf0(1);
         }
     }
+    //gelatina.nac
     if ((unsigned int)(Level_id - 0x8c) <= 0x13) {
         if (Music_id != 3) {
             Music_id = 3;
@@ -60,6 +65,7 @@ check_world1:
             FUN_80057bf0(1);
         }
     }
+    //interiorrobot.ati
     if ((unsigned int)(Level_id - 0xa0) <= 0x13) {
         if (Music_id != 4) {
             Music_id = 4;
@@ -68,6 +74,7 @@ check_world1:
             FUN_80057bf0(1);
         }
     }
+    //interiorrobot.ati twice for some reason...
     if (Level_id >= 0xb4) {
         if (Music_id != 4) {
             Music_id = 4;
