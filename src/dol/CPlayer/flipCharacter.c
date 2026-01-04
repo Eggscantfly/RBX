@@ -20,6 +20,6 @@ void flipCharacter(int param_1)
         *(int *)(param_1 + 0x1e8) = 1; // flip left
     }
     else {
-        *(int *)(param_1 + 0x1e8) = 0; //flip right
+        *(int *)(param_1 + 0x1e8) = 0; // flip right
     }
 }
