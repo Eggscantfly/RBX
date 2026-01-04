@@ -1,3 +1,14 @@
+#ifndef CPLAYER_H
+#define CPLAYER_H
+
+typedef struct {
+    char* typeInfo;
+    float x;
+    float y;
+} CVector2;
+
+extern char CVector2_TypeInfo[];
+
 typedef struct CPlayer {
     char unk_0x0[0x8];
     float posX;              // 0x8
@@ -13,10 +24,9 @@ typedef struct CPlayer {
     int state;               // 0x240
 } CPlayer;
 
-typedef struct {
-    char* typeInfo;
-    float x;
-    float y;
-} CVector2;
+extern CPlayer** g_ppPlayer;  // 0x801FACE0
 
-extern char CVector2_TypeInfo[];
+void healthSub(void* player, void* damageSource);
+void flipCharacter(int param_1);
+
+#endif
