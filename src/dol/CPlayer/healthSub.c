@@ -1,5 +1,5 @@
 //originally named (FUN_80065004)
-#include "include/Game/CPlayer/CPlayer.h"
+#include "include/Game/CActor/CActor.h"
 
 
 void healthSub(void* player, void* damageSource)
