@@ -1,5 +1,5 @@
 // Originally named (FUN_800650b8)
-#include "include/Game/CPlayer/CPlayer.h"
+#include "include/Game/CActor/CActor.h"
 
 void flipCharacter(int param_1)
 {
